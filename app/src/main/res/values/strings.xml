@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Boxing 101</string>
+    <string name="round_text">Round</string>
+    <string name="starting_score">0</string>
+    <string name="fighter_one_hint">Fighter # 1</string>
+    <string name="close_round">Close round</string>
+    <string name="clear_winner">Clear winner</string>
+    <string name="total_dominance">Total dominance</string>
+    <string name="over_matched">OverMatched</string>
+    <string name="fighter_two_hint">Fighter # 2</string>
+    <string name="reset">New Bout</string>
+</resources>

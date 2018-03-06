@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/box"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/arcanum"
+            android:gravity="center"
+            android:text="@string/round_text"
+            android:textAllCaps="true"
+            android:textColor="#FFFBC02D"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="@string/starting_score"
+            android:textColor="#FFCB7832"
+            android:textSize="64sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fighter_one_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/arcanum"
+                    android:gravity="center"
+                    android:hint="@string/fighter_one_hint"
+                    android:inputType="textMultiLine"
+                    android:textColor="#FFFBC02D"
+                    android:textColorHint="#FFFBC02D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fighter_one_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/starting_score"
+                    android:textColor="#FFCB7832"
+                    android:textSize="100sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="closeRoundF1"
+                    android:text="@string/close_round"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFCB7832"
+                    />
+
+                <Button
+                    android:textColor="#FFCB7832"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="clearWinnerF1"
+                    android:text="@string/clear_winner"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:textColor="#FFCB7832"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="totalDominanceF1"
+                    android:text="@string/total_dominance"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:textColor="#FFCB7832"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="overMatchedF1"
+                    android:text="@string/over_matched"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#FFCB7832">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fighter_two_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/arcanum"
+                    android:gravity="center"
+                    android:hint="@string/fighter_two_hint"
+                    android:inputType="textMultiLine"
+                    android:textColor="#FFFBC02D"
+                    android:textColorHint="#FFFBC02D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fighter_two_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/starting_score"
+                    android:textColor="#FFCB7832"
+                    android:textSize="100sp" />
+
+                <Button
+                    android:textColor="#FFCB7832"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="closeRoundF2"
+                    android:text="@string/close_round"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:textColor="#FFCB7832"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="clearWinnerF2"
+                    android:text="@string/clear_winner"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:textColor="#FFCB7832"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="totalDominanceF2"
+                    android:text="@string/total_dominance"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:textColor="#FFCB7832"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF212121"
+                    android:fontFamily="@font/tiza_chalk"
+                    android:onClick="overMatchedF2"
+                    android:text="@string/over_matched"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <Button
+                android:textColor="#FFCB7832"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="14dp"
+                android:background="#FF212121"
+                android:fontFamily="@font/tiza_chalk"
+                android:onClick="reset"
+                android:padding="8dp"
+                android:text="@string/reset"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
