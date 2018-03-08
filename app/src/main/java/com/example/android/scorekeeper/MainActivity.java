@@ -16,12 +16,10 @@ public class MainActivity extends AppCompatActivity {
     int lastRound = 12;
     String winnerIs = "";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     /**
@@ -374,6 +372,4 @@ public class MainActivity extends AppCompatActivity {
         roundsNumber.setText(String.valueOf(rounds));
 
     }
-
-
 }

@@ -5,4 +5,7 @@
     <color name="colorAccent">#212121</color>
     <color name="primary_text_default_material_dark">#000000</color>
     <color name="text_color_primary">#000000</color>
+    <color name="light_font_color">#FFFBC02D</color>
+    <color name="dark_font_color">#FFCB7832</color>
+    <color name="button_background_color">#FF212121</color>
 </resources>
